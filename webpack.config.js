@@ -4,7 +4,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     //the starting file
-    entry: './app/index.js',
+    entry: ['@babel/polyfill', './app/index.js'],
     //where we want the final file to be injected:
     //create new folder named dist, inside of which put a file named index_bundle
     output: {
